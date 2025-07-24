@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  /* background-color: 1E1E1E; */
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+nav ul li {
+  list-style: none;
+}
+.nav-li-2-3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Banner Section Styles */
+.banner-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-h1 {
+  color: rgba(233, 90, 8, 1);
+}
+
+/* shared styles */
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway-primary {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* .button{
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover{
+    background-color: yellowgreen;
+    transform: scale(1.1);
+} */
+
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+  .hide-li-in-mobile {
+    display: none;
+  }
+}
