@@ -27,6 +27,10 @@ nav ul li {
 .banner-h1 {
   color: rgba(233, 90, 8, 1);
 }
+.banner-section div p{
+    font-weight: 400;
+    font-size: 1.35rem;
+}
 
 /* shared styles */
 .noto-serif-font {
@@ -46,6 +50,9 @@ nav ul li {
   font-optical-sizing: auto;
   font-style: normal;
 }
+.text-color{
+    color: rgba(0, 0, 0, 0.5);
+}
 /* .button{
     background-color: #4E47FF;
     color: #FFFFFF;
@@ -64,5 +71,19 @@ nav ul li {
 @media screen and (max-width: 576px) {
   .hide-li-in-mobile {
     display: none;
+  }
+  .banner-section{
+    flex-direction: column-reverse;
+    h1{
+        font-size: 1.5rem;
+    }
+    img{
+        margin-bottom: 1.75rem;
+    }
+  }
+  .banner-title-div{
+    padding: 0 1rem;
+    br{display: none;
+    }
   }
 }
