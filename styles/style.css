@@ -84,6 +84,9 @@ input{
   color: rgb(144, 200, 33);
   text-decoration: underline;
 }
+.footer-img img:hover{
+  cursor: pointer;
+}
 
 /* Text Overlay Styles */
 .offer-section {
