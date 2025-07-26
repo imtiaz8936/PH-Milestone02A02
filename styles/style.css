@@ -37,13 +37,14 @@ nav ul li{
     list-style: disc;
     margin-left: 1.5rem;
 }
+
 /* .badge{
     position:absolute;
     margin-left: 390px;
     margin-bottom: 80px;
 } */
 
-.trusted-badge {
+/* .trusted-badge {
 height: 250px;
 width: 250px;
 text-align: center;
@@ -51,7 +52,62 @@ position: absolute;
 left: 355px;
 bottom: 440px;
 animation: spin 4s linear infinite;
+} */
+
+/* Shop Grid Section Styles */
+.img-grid{
+  display: flex;
+  gap: 1.5rem;
 }
+.radius{
+  border-radius: 0.875rem;
+}
+
+/* Colorful Bunch Section Styles */
+/* .colorful-bunch{
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: round;
+  background-size: 100%;
+  background-repeat: no-repeat;
+} */
+.colorful-bunch-div{
+  width: 100%;
+  height: 80vh;
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+input{
+  width: 40.25rem;
+  height: 3.125rem;
+  background-color: #FFFFFF;
+}
+.input-side-btn{
+  height: 50px;
+  background-color: rgba(233, 90, 8, 1);
+  color: #FFFFFF;
+  padding: 0 5rem;
+  cursor: pointer;
+  margin-left: -4.2px;
+}
+
+/* Footer Section Styles */
+.footer-img img{
+  width: 36px;
+  height: 36px;
+  margin-right: 1.5rem;
+}
+.footer-links ul li{
+  margin-bottom: 32px;
+}
+
+
+
+
 
 /* shared styles */
 .noto-serif-font {
@@ -74,18 +130,24 @@ animation: spin 4s linear infinite;
 .text-color{
     color: rgba(0, 0, 0, 0.5);
 }
+.no-padding{
+  padding: 0 !important;
+}
 .button{
     background-color: rgba(233, 90, 8, 1);
     color: #FFFFFF;
     border: none;
     padding: 1.1875rem 5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* transition: background-color 0.3s ease, transform 0.3s ease; */
 }
 .button:hover{
     background-color: rgb(170, 225, 60);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
+/* img{
+  width: 100%;
+} */
 
 /* Our Plants Styles */
 /* .grid{
@@ -99,12 +161,18 @@ animation: spin 4s linear infinite;
 }
 .card-img{
     width: 100%;
-    height: 20.125rem;
+    height: 66.4%;
 }
 
 
 /* Responsive Styles */
 @media screen and (max-width: 576px) {
+  main,footer{
+    section{
+      padding: 0 1rem;
+    }
+
+  }
   .hide-li-in-mobile {
     display: none;
   }
@@ -113,32 +181,121 @@ animation: spin 4s linear infinite;
     h1{
         font-size: 1.5rem;
     }
+    .banner-title-div p{
+      font-size: 0.875rem;
+    }
     img{
         margin-bottom: 1.75rem;
     }
   }
-  .banner-title-div{
+  .banner-title-div,
+  /* .our-plants-div, */
+  .flower-store-title-div
+  {
     padding: 0 1rem;
     br{display: none;
+    }
+  }
+  .our-plants-div{
+    h1{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 0.875rem;
     }
   }
   /* .grid{
     grid-template-columns: repeat(2,1fr);
     gap: 0.625rem;
   } */
+  /* .card-div{
+    padding: 0 1rem;
+  }  */
   .card{
     width: 10.6875rem;
     height: 21.28125rem;
     .card-img{
-        width: 10.6875rem;
-        height: 12.28125rem;
+        /* width: 10.6875rem; */
+        /* height: 12.28125rem; */
+        width: 100%;
+        height: 50%;
     }
     .button{
         width: 10.6875rem;
         height: 3.125rem;
         padding: 1rem 1rem;
     }
-}
+  }
+  .flower-store{
+    flex-direction: column;
+    .flower-store-img{
+      width: 100%;
+      height: 73.3%;
+      padding: 0 1rem;
+    }
+    .flower-store-ul-li-1{
+      font-size: 1.5rem;
+    }
+    .flower-store-ul-li-2-3-4{
+      font-size: 0.875rem;
+    }
+  }
+  .flower-store-img-div{
+    padding: 0 1rem;
+  }
+  .img-grid{
+    flex-direction: column;
+    .img-box-1,
+    img{
+      width: 100%;
+      /* padding: 0 1rem; */
+    }
+  }
+  .latest-deals-div{
+    h1{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 0.875rem;
+    }
+    /* padding: 0 1rem; */
+  }
+  .colorful-bunch-div{
+    height: 40vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .colorful-bunch-div h1{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  input{
+    width: 13.625rem;
+  }
+  .input-div{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .input-side-btn{
+    height: 50px;
+    padding: 12px;
+    margin-left: -4px;
+  }
+  .footer-div{
+    flex-direction: column;
+    margin: 0px 20px 14px 50px;
+  }
+  .footer-description,
+  .footer-links,
+  .footer-img,
+  .footer-links ul li
+  {
+    margin-top: 0.5rem;
+  }
+  .footer-img{
+    margin-bottom: 50px;
+  }
 }
 
 /* @media screen and (min-width:1024px) {

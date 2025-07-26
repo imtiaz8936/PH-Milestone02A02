@@ -74,7 +74,7 @@
             variety of fresh.
           </p>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-7">
+        <div class="card-div grid grid-cols-2 lg:grid-cols-4">
           <div class="card">
             <img
               src="./assets/sample-flower-image.png"
@@ -240,10 +240,10 @@
 
       <!-- <img class="badge w-2xs h-72" src="./assets/trusted-badge.png" alt="badge"> -->
       <section class="flower-store max-w-[1140px] mx-auto flex justify-between items-center mt-52">
-        <div class="w-[33.75rem] h-[37.25rem]">
-            <img src="./assets/flower-store.png" alt="flower">
+        <div class="flower-store-img-div w-[33.75rem] h-[37.25rem]">
+            <img class="flower-store-img w-[100%]" src="./assets/flower-store.png" alt="flower">
         </div>
-        <div>  
+        <div class="flower-store-title-div">  
             <h1 class="flower-store-ul-li-1 noto-serif-font font-bold text-5xl">Flower & Plants <br> Lover</h1>
             <ul>
                 <li class="flower-store-ul-li-2-3-4 inter-normal font-normal text-[1.375rem] text-color">Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety <br> of fresh.</li>
@@ -251,11 +251,43 @@
                 <li class="flower-store-ul-li-2-3-4 inter-normal font-normal text-[1.375rem] text-color">Indulge your senses with the beauty and <br> fragrance of our fresh flower shop. From classic <br> roses to exotic blooms, we offer a wide variety <br> of fresh.</li>
             </ul>
         </div>
+      </section>
 
+      <section class="latest-deals max-w-[1140px] mx-auto mt-32">
+        <div class="latest-deals-div text-center mb-12">
+          <h1 class="noto-serif-font font-bold text-[3.125rem]"><span class="banner-h1">Latest</span> Deals</h1>
+          <p class="inter-normal font-normal text-[1.375rem] text-color">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From <br> classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
+
+        <div class="img-grid">
+          <div class="img-box-1 w-[33%]" id="img-box-1">
+            <img class="box-img-1 radius" src="./assets/deal-bloom.png" alt="">
+            <img class="box-img-3 mt-[1.5rem] radius" src="./assets/deal-ana.png" alt="">
+          </div>
+          <img class="box-img-2 w-[66%] radius" src="./assets/deal-zabo.png" alt="">
+        </div>
+      </section>
+
+      <section class="colorful-bunch mt-28 h-[33.25rem] no-padding">
+        <div class="colorful-bunch-div">
+          <div>
+            <h1 class="noto-serif-font text-white font-bold text-[3.125rem]">Join the colorful Bunch</h1>
+          </div>
+          <div class="input-div mt-5">
+            <input class="inter-normal pl-5 " type="text" placeholder="Write email"> 
+            <button class="input-side-btn inter-normal font-semibold text-[1rem]">Subscribe</button>
+          </div>
+        </div>
       </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="footer-section h-[21.75rem]">
+      
+    </footer>
   </body>
 </html>
